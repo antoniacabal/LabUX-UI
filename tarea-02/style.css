@@ -1,0 +1,334 @@
+/*INDICE DE ESTILOS
+
+0. Generales / Colores
+1. Tipografias
+2. Header / Cabecera
+3. Enlaces / Botones
+4. Body
+5. Main
+6. Areas destacadas
+7. Footer
+
+*/
+
+/* 0. Generales / colores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: #0069af;
+    --color-acento: #1238a0;
+    --color-terceario: #e29127;
+    --color-texto: #101720;
+}
+
+.element-row{
+    display: flex;
+}
+
+/* 1. Tipografias */
+.titulo-principal{
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color-principal);
+}
+
+.titulo-secundario{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-acento);
+}
+
+.parrafo{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+}
+.texto-oculto{
+    display: none;
+}
+
+
+.footer-columns nav a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: inherit;
+    text-decoration: none;
+}
+.footer-columns nav a:hover {
+    text-decoration: underline;
+}
+
+/* 2. Header / Cabecera */
+#cabecera-principal{
+    padding: 20px 2% 15px 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--color-principal);
+    background: rgb(252, 252, 252);
+}
+
+/* 3. Enlaces / Botones */
+.boton-principal{
+    /* Fuente */
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    /* Quito la linea inferior */
+    text-decoration: none;
+    /* Asigno cuerpo por medio de rellono */
+    padding: 8px 15px 8px 15px;
+    
+    /* transicion */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-principal:hover{
+    color: #f8f9fa;
+    background-color: var(--color-principal);
+    
+    /* transicion */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.4s ease;
+}
+    /* transicion */    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+        100% { transform: scale(1); }
+    }
+
+.enlaces {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+.enlaces {
+    text-decoration: underline;
+}
+
+/* 4. Body */
+body{
+    /* Fondo: URL, top left, patron*/
+    background: url(Assets/foto-fondo.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+/* 5. Main */
+main{
+    background: color-mix(in srgb, var(--color-principal) 25%, white);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+main h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+main h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+main h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+main p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* 6. Areas destacadas */
+.destacados-de-la-semana {
+    align-items: center;
+}
+.area-destacadas{
+    flex-wrap: wrap;
+}
+
+.element-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.element-row article {
+    flex: 1 1 300px;
+    min-width: 0; 
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tarjeta */
+    .tarjeta {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+    }
+
+    .tarjeta:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tarjeta h3, .tarjeta p, .tarjeta a {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .tarjeta h3 {
+        margin-top: 12px;
+    }
+
+    .tarjeta p {
+        margin-top: 8px;
+    }
+
+    .tarjeta a, .destacado-texto a {
+        display: inline-block;
+        margin: 12px 16px 16px 16px;
+        color: var(--color-principal);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .tarjeta a:hover, .destacado-texto a:hover {
+        text-decoration: underline;
+    }
+
+/* Destacados de la semana */
+    .destacado-horizontal {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background: #ffffff;
+        border-radius: 16px; /* antes 50px */
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .destacado-horizontal:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .destacado-horizontal img {
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0;
+        flex-shrink: 0;
+    }
+
+    .destacado-texto {
+        padding: 16px 16px 16px 0;
+    }
+
+    .destacados-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+/* 7. Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 32px;
+    background: #ffffff;
+}
+
+.footer-brand {
+    flex-shrink: 0;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    flex: 1;
+}
+
+.footer-columns nav h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer-columns nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-columns nav li {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px){
+    /* 2. Header / Cabecera */
+    #cabecera-principal{
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+    /* 3. Enlaces / Botones */
+    nav[role=navigation] {
+        width: 100%;
+    }
+    .boton-principal{
+        display: block;
+        width: 96%;
+        margin: 5px 2% 5px 2%;
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+        border-radius: 0;
+    }
+    /* 7. Footer */
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}

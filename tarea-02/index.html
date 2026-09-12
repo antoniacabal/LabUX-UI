@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale:1.0">
+        <title>Cooltour Oporto - Sitio Oficial de Información Turística</title>
+        <meta name="description" content="Descrubí qué hacer en Oporto. información útil antes de llegar, guías de alojamiento, atractivos turísticos, agenda cultural y mapas de la ciudad.">
+        <meta name="robots" content="index, follow">
+
+        <!-- Cabecera principal del sitio -->
+        <link href="style.css" rel="stylesheet">
+
+        <!-- Fuentes de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Cabecera principal del sitio -->
+        <header id="cabecera-principal">
+            <!-- Logo del sitio 
+            href-> la dirección a donde voy al dar clic  
+            -->
+            <a href="index.html" aria-label="Ir a la página de inicio de Cooltour Oporto">
+                <img src="assets/logo_cooltour_oporto.png" alt="Logotipo oficial de Cooltour Oporto"
+                width="156" height="60">
+            </a>
+
+            <!-- Navegador principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                  <a href="" class="boton-principal">Qué hacer</a>
+                  <a href="" class="boton-principal">Antes de llegar</a>
+                  <a href="" class="boton-principal">Información</a>
+                  <a href="" class="boton-principal">Contacto</a>
+            </nav>
+
+        </header>
+
+
+
+        <!-- Contenido principal del sitio -->
+        <main role="main">
+
+            <h1 class="texto-oculto" aria-hidden="true">Portal de Turismo Oficial de la Ciudad de Oporto</h1>
+
+            <!-- Actividades destacadas-->
+            <section id="area-destacadas">
+                <h2 class="titulo-principal">Actividades destacadas en la ciudad</h2>
+                
+                <div class="element-row">
+
+                    <!-- tarjeta -->
+                    <article role="article" class="tarjeta">
+                        <img src="assets/pastel-de-nata.jpg" alt="Multiples pastel de nata recien horneados">
+                        <h3 class="titulo-secundario">Dónde Comer</h3>
+                        <p class="parrafo">En este buscador, vas a poder filtrar por nombre, tipo de establecimiento y por barrio</p>
+                        <a href="" class="enlaces" aria-label="Ir al buscador de restaurantes y de comida en Oporto">ver más</a>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article role="article" class="tarjeta">
+                        <img src="assets/francesinha-de-oporto.jpg" alt="Francesinha siendo bañada en salsa">
+                        <h3 class="titulo-secundario">¿Cuál es el sabor de la gastronomía portuense?</h3>
+                        <p class="parrafo">En Oporto vas a encontrar platos típicos y comida de todo el mundo</p>
+                        <a href="" class="enlaces" aria-label="Ver información sobre grastonomía portuense">ver más</a>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article role="article" class="tarjeta">
+                        <img src="assets/mercado-de-bolhao.jpg" alt="Mercado municipal do Bolhão">
+                        <h3 class="titulo-secundario">Mercados y patios Gastronómicos</h3>
+                        <p class="parrafo">Conocé los patios y mercados en donde podés disfrutar de la mejor gastronomía de la ciudad</p>
+                        <a href="" class="enlaces" aria-label="Ver más información sobre los patios gastronómicos de la ciudad">ver más</a>
+                    </article>
+
+
+                </div>
+
+            </section>
+            <!-- Fin de actividades destacadas-->
+
+            <!-- Contenido Multimedia -->
+            <section>
+                <h2 class="titulo-principal">Experiencia en Oporto</h2>
+                <div>
+                    <video controls autoplay loop width="1600" height="900" aria-label="Video sobre la ciudad de Oporto">
+                        <source src="assets/video-de-oporto.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <!-- Fin de Contenido Multimedia -->
+
+
+
+            <!-- Contenidos Destacados -->
+            <section>
+                <h2 class="titulo-principal" class="destacado-de-la-semana">Destacados de la Semana</h2>
+                <div class="destacados-lista">
+                    
+                    <!-- Tarjeta Destacada 1 -->
+                    <article role="article" class="destacado-horizontal">
+                        <img src="assets/bodega-calem.jpg" alt="Barriles de vino dentro de la bodega de Cálem" width="400" height="250">
+                        <div class="destacado-texto">
+                            <h3 class="titulo-secundario">Circuitos de Museos Gratuitos</h3>
+                            <a href="" class="enlaces" aria-label="Ver más sobre los circuitos de museos gratuitos">Ver Más</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Destacada 2 -->
+                    <article role="article" class="destacado-horizontal">
+                        <img src="assets/parque-serralves.jpg" alt="Vista desde el lago de los campos del Parque de Serralves" width="400" height="250">
+                        <div class="destacado-texto">
+                            <h3 class="titulo-secundario">Espacios Verdes Imperdibles</h3>
+                            <a href="" class="enlaces" aria-label="Ver más sobre los espacios verdes imperdibles">Ver Más</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Destacada 3 -->
+                    <article role="article" class="destacado-horizontal">
+                        <img src="assets/puente-don-luis-i.jpg" alt="Vista desde abajo del Puente Don Luis I" width="400" height="250">
+                        <div class="destacado-texto">
+                            <h3 class="titulo-secundario">Arquitectura e Historia Porteña</h3>
+                            <a href="" class="enlaces" aria-label="Ver más sobre la arquitectura e historia portuense">Ver Más</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- Ubicación Geográfica -->
+            <section aria-labelledby="titulo-mapa">
+                <h2 id="titulo-mapa" class="titulo-principal">Ubicación y Centros de Atención al Turista</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48059.67686776276!2d-8.663152989631945!3d41.162246828601845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465abc4e153c1%3A0xa648d95640b114bc!2sOporto%2C%20Portugal!5e0!3m2!1ses!2sco!4v1788924642280!5m2!1ses!2sco"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa interactivo de la Ciudad de Oporto con la ubicación del Obelisco y centros de atención turística">
+                    </iframe>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de Página Institucional -->
+    <footer class="footer" role="contentinfo">
+
+            <!-- Identificador Institucional del Footer -->
+            <div class="footer-brand">
+                <img src="assets/logotipo-oporto - copia.webp" alt="Logotipo oficial del Gobierno de la Ciudad de Oporto" 
+                 width="240" height="150">
+            </div>
+
+            <!-- Columnas de Enlaces del Footer -->
+            <div class="footer-columns">
+                
+                <!-- Lista 1: Prestadores -->
+                <nav>
+                    <h3 id="footer-prestadores" class="titulo-secundario">Prestadores</h3>
+                    <ul>
+                        <li><a href="/alquileres-temporales">Alquileres Temporales</a></li>
+                        <li><a href="/alojamientos-turisticos">Alojamientos turísticos</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 2: Profesionales -->
+                <nav>
+                    <h3 id="footer-profesionales" class="titulo-secundario">Profesionales</h3>
+                    <ul>
+                        <li><a href="/observatorio-turistico">Observatorio turístico</a></li>
+                        <li><a href="/turismo-reuniones">Turismo de Reuniones</a></li>
+                        <li><a href="/prensa-contacto">Prensa: material y contacto</a></li>
+                        <li><a href="/noticias-ente">Noticias del ente de turismo</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 3: Interacción y Contacto -->
+                <nav>
+                    <h3 id="footer-contacto" class="titulo-secundario">Contacto e Interacción</h3>
+                    <ul>
+                        <li><a href="/contactate-con-nosotros">Contactate con nosotros</a></li>
+                        <li><a href="/suscribete-newsletter" aria-label="Ir al formulario para suscribirse al Newsletter oficial">Suscríbete al Newsletter</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+    </footer>
+
+    </body>
+
+</html>
