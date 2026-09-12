@@ -280,6 +280,7 @@ html, body {
     gap: 32px;
     padding: 32px;
     background: #ffffff;
+    border-top: 3px solid var(--color-principal);
 }
 
 .footer-brand {
